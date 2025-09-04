@@ -1,5 +1,5 @@
 1. **What is MongoDB?**
-   - **Answer:** MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.
+   - **Answer:** MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.  
 
  
 2. **Explain the concept of BSON in MongoDB.**
