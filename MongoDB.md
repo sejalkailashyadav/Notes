@@ -1,6 +1,7 @@
 1. **What is MongoDB?**
    - **Answer:** MongoDB is a NoSQL database that stores data in flexible, JSON-like documents.
 
+ 
 2. **Explain the concept of BSON in MongoDB.**
    - **Answer:** BSON (Binary JSON) is a binary-encoded serialization of JSON-like documents used in MongoDB.
 
