@@ -1,5 +1,4 @@
  basic User CRUD operation 
-
 ### Step 1: Create User DTO (Data Transfer Object)
 
 Create a `user.dto.ts` file in the `user` module folder to define the structure of the data being transferred:
