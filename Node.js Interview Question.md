@@ -1,6 +1,3 @@
-
----
-
 # Node.js Interview Question
 
 ## Questions & Answers
