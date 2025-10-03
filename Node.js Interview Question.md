@@ -1,7 +1,6 @@
 # Node.js Interview Question
 
 ## Questions & Answers
-
 ### 1. **What is Node.js?**
    - **Answer**: Node.js is a runtime environment built on Chrome's V8 JavaScript engine, enabling server-side execution of JavaScript.
    - **Example**: Traditional client-side scripting with JavaScript manipulates DOM elements, but with Node.js, you can create a web server using JavaScript.
