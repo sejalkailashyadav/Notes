@@ -1,8 +1,7 @@
 ```markdown
 # README 
 ## Common Issues and Solutions
-### Insufficient Permissions in VS Code
-
+### Insufficient Permissions in VS Code\
 If you are facing permission issues with your repository in VS Code, try changing the permissions of your repository using the following command:
 ```bash
 sudo chmod -R 777 Repo_name
