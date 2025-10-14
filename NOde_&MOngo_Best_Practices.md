@@ -1,6 +1,5 @@
 
 # Node.js Documentation and Best Practices
-
 ## Introduction
 
 This documentation provides insights into common Node.js practices, Mongoose queries, and HTTP request handling using Axios and Fetch.
