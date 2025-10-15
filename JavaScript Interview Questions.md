@@ -5,7 +5,6 @@
 # Why Use JavaScript?
 
 JavaScript enables dynamic and interactive web content, transforming static pages into engaging user experiences.
-
 ## Example:
 
 Imagine a web page where a user submits a form to sign up for a newsletter. Without JavaScript, every form submission would require a full page refresh. With JavaScript:
