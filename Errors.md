@@ -18,7 +18,6 @@ To troubleshoot this issue:
 rm -rf node_modules
 rm package-lock.json
 ```
-
 2. Clear your npm cache:
 
 ```bash
