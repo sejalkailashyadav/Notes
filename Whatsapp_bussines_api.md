@@ -485,7 +485,7 @@ No third-party tools. No middlemen.
 4. Follow the prompts to accept the **Developer Terms**.
 5. Once completed, you’ll see your **Developer Dashboard**.
 
-<img width="3358" height="1992" alt="image" src="https://github.com/user-attachments/assets/ffca9a52-6c80-4424-a0b0-67c41ab37719" />
+<img width="1424" height="847" alt="image" src="https://github.com/user-attachments/assets/7edc8441-6370-4fc1-b820-aa44e023efc3" />
 
 *Figure 1: Meta Developer Dashboard after signup*
 
@@ -643,7 +643,9 @@ WhatsApp Manager is where you **manage phone numbers, templates, and webhooks**.
    - **Message Templates**: create or manage pre-approved templates
    - **Settings**: configure webhook URL and notifications
 
-![WhatsApp Manager Overview](images/whatsapp-manager.png)
+[![WhatsApp Manager Overview](images/whatsapp-manager.png)](https://assets.superblog.ai/site_cuid_clnw4nrag2342701vpmufcj1n2w/images/image-cp-1735402470597-compressed.jpeg)
+<img width="1600" height="1036" alt="image" src="https://github.com/user-attachments/assets/15e06414-69d2-4c0c-bd1a-9b31fdd13eb7" />
+
 *Figure 3: WhatsApp Manager interface*
 
 >  **Pro Tip:** Bookmark this page — you’ll come back here frequently while integrating the API.
@@ -796,7 +798,8 @@ POST https://graph.facebook.com/v21.0/{PHONE_NUMBER_ID}/messages
    * **Phone Number ID**
    * **Verified status**
 
-![Add Phone Number](images/add-phone-number.png)
+<img width="2246" height="908" alt="image" src="https://github.com/user-attachments/assets/329ef4cc-7f05-446a-9139-fafdf09b0534" />
+
 *Figure 1: Adding & verifying a business phone number*
 
 > **Pro Tip:** Start with a test number for sandbox experiments. Only add permanent numbers when ready for production.
@@ -1094,14 +1097,12 @@ WhatsApp sends webhook events for:
 ##  Step 8: Full Message Flow Diagram
 
 ```
-Customer Action → Backend Server → WhatsApp Cloud API → Recipient
-                                     ↘ Webhook → Backend updates
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/7b5df1d0-c55e-45cf-bb83-41d1ea763eed" />
+
 ```
 
 * Flow covers **text, media, template, interactive messages**
 * Webhooks ensure **status tracking and automation**
-
----
 
 ##  Step 9: Best Practices
 
@@ -1277,15 +1278,7 @@ curl -X POST "https://graph.facebook.com/v21.0/PHONE_NUMBER_ID/messages" \
 3. Delivery confirmed → backend sends **interactive message** (rate experience)
 4. Webhook listens for **button clicks** → updates CRM
 
-```mermaid
-graph LR
-A[Order Placed] --> B[Send Template Message]
-B --> C[Product Shipped]
-C --> D[Send Image Message]
-D --> E[Delivery Confirmed]
-E --> F[Send Interactive Survey]
-F --> G[Webhook → Update CRM]
-```
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/6174f270-e81d-4907-81ff-62e4b56d7af8" />
 
 ---
 
@@ -1320,6 +1313,7 @@ Let’s go step by step from setup → verification → coding → testing → d
 ---
 
 ##  Step 1: What Are Webhooks?
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f1a6c190-acee-46ad-968d-e3a93e2211b4" />
 
 A **webhook** is a public HTTPS endpoint (like `https://yourapp.com/webhook`)  
 that Meta calls whenever an event happens on your WhatsApp app.
@@ -1431,6 +1425,7 @@ Meta doesn’t send *all events* automatically.
 You must **subscribe** to event types manually:
 
 Go to → **App Dashboard → Webhooks → Manage Subscriptions**
+<img width="754" height="367" alt="image" src="https://github.com/user-attachments/assets/b65eed35-c68f-4d41-bc97-37a4ab192058" />
 
 Enable these for WhatsApp:
 
@@ -1645,9 +1640,6 @@ whatsapp-cloud-api/
 ├── tsconfig.json
 
 ````
-
-📸 *(Image idea: Visual directory structure diagram)*
-
 ---
 
 ##  Step 2: Environment Setup
@@ -1698,8 +1690,6 @@ VERIFY_TOKEN=my_secret_token
 ACCESS_TOKEN=EAABxC...your_whatsapp_token
 PHONE_NUMBER_ID=123456789012345
 ```
-
-📸 *(Image idea: .env file variables screenshot)*
 
 ---
 
@@ -1824,8 +1814,6 @@ You should get a response:
 {"messages":[{"id":"wamid.HBg..."}]}
 ```
 
-📸 *(Image idea: Postman API test screenshot)*
-
 ---
 
 ##  Step 7: Webhook Route (Receive Messages)
@@ -1875,8 +1863,6 @@ router.post("/", (req: Request, res: Response) => {
 export default router;
 ```
 
-📸 *(Image idea: console showing received message event)*
-
 ---
 
 ##  Step 8: Expose Local Server via Ngrok
@@ -1924,9 +1910,6 @@ Paste this URL, and set **Verify Token** to your `.env` value.
      ```
       Message from 919876543210: Hi there!
      ```
-
-📸 *(Image idea: real console + ngrok + WhatsApp chat screen)*
-
 ---
 
 ##  Step 10: Pro Developer Enhancements
@@ -2042,8 +2025,6 @@ Example:
 | **10**     | Permission denied             | App not in Live mode           | Go to Meta Dashboard → “App Mode” → Live                                     |
 | **368**    | Message blocked               | User blocked or spam filtered  | Avoid promotional spam                                                       |
 | **100005** | Unsupported message type      | JSON format error              | Match correct message schema from docs                                       |
-
-*(🖼️ Image idea: Table or screenshot of Postman response showing error 131021)*
 
 ---
 
