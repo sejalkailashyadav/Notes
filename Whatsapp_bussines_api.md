@@ -851,9 +851,6 @@ After this chapter, you now have:
 
 ---
 
-# `05-sending-first-message-deep.md`
-
-
 #  Chapter 5 — Sending Your First Message (Deep Dive, Pro-Level)
 
 Now that your **access token** and **phone number** are ready, it’s time to send messages via WhatsApp Cloud API — but we’ll go **beyond basics**.  
@@ -1116,8 +1113,6 @@ Customer Action → Backend Server → WhatsApp Cloud API → Recipient
 
 ---
 
-# `06-templates-media-interactive.md`
-
 `
 #  Chapter 6 — Understanding Templates, Media, and Interactive Messages (Deep Dive)
 
@@ -1197,7 +1192,7 @@ curl -X POST "https://graph.facebook.com/v21.0/PHONE_NUMBER_ID/messages" \
   "type": "image",
   "image": {
     "link": "https://example.com/product.jpg",
-    "caption": "Check out our new product! 🎉"
+    "caption": "Check out our new product! "
   }
 }'
 ```
@@ -1307,8 +1302,6 @@ F --> G[Webhook → Update CRM]
 
 ---
 
-# `07-webhooks-message-status.md`
-
 `
 #  Chapter 7 — Managing Webhooks for Message Delivery & Status Updates (Deep Dive)
 
@@ -1392,7 +1385,7 @@ app.get("/webhook", (req, res) => {
 //  Handle Incoming Webhook Notifications
 app.post("/webhook", (req, res) => {
   const data = req.body;
-  console.log("📩 Incoming webhook:", JSON.stringify(data, null, 2));
+  console.log(" Incoming webhook:", JSON.stringify(data, null, 2));
 
   if (data.object === "whatsapp_business_account") {
     data.entry.forEach((entry) => {
@@ -1604,8 +1597,6 @@ if (message.interactive?.type === "button_reply") {
 >  **Next Chapter:** Using Postman Collection for WhatsApp Cloud API — we’ll explore the official Meta Postman collection to send, test, and debug your API calls without writing a single line of code.
 
 ---
-
-# `09-nodejs-whatsapp-api.md`
 
 
 # 💻 Chapter 9 — Building a Real App with Node.js + Express + WhatsApp Cloud API (Deep Dive)
@@ -1866,11 +1857,11 @@ router.post("/", (req: Request, res: Response) => {
   const body = req.body;
 
   if (body.object) {
-    console.log("📩 New Webhook Event:", JSON.stringify(body, null, 2));
+    console.log(" New Webhook Event:", JSON.stringify(body, null, 2));
 
     if (body.entry?.[0]?.changes?.[0]?.value?.messages) {
       const msg = body.entry[0].changes[0].value.messages[0];
-      console.log(`📥 Message from ${msg.from}: ${msg.text?.body}`);
+      console.log(` Message from ${msg.from}: ${msg.text?.body}`);
     }
 
     res.sendStatus(200);
@@ -1929,7 +1920,7 @@ Paste this URL, and set **Verify Token** to your `.env` value.
    * Watch the console logs:
 
      ```
-     📥 Message from 919876543210: Hi there!
+      Message from 919876543210: Hi there!
      ```
 
 📸 *(Image idea: real console + ngrok + WhatsApp chat screen)*
@@ -2163,7 +2154,7 @@ Use “Access Token” dropdown → select your permanent token.
 
 ---
 
-## 🧱 Step 7 — Logging & Monitoring
+## Step 7 — Logging & Monitoring
 
 Add structured logs in your backend:
 
@@ -2338,7 +2329,7 @@ git push origin main
 * Start command: `npm start`
 * Region: Choose closest to your users (e.g., Singapore for Asia).
 
-### 3️⃣ Add environment variables in Render dashboard:
+###  Add environment variables in Render dashboard:
 
 ```
 ACCESS_TOKEN = EAABxC...
@@ -2357,7 +2348,7 @@ https://whatsapp-api.onrender.com
 
 ---
 
-## 🌐 Step 4 — Connect the Webhook to Meta Dashboard
+##  Step 4 — Connect the Webhook to Meta Dashboard
 
 1. Go to [Meta for Developers](https://developers.facebook.com/apps/).
 2. Select your WhatsApp app → “Configuration” tab.
@@ -2391,7 +2382,7 @@ curl -X POST https://graph.facebook.com/v21.0/$PHONE_NUMBER_ID/messages \
 }'
 ```
 
-If everything works, the recipient will get the message within seconds 🎉
+If everything works, the recipient will get the message within seconds 
 
 *(🖼️ Image idea: Postman response and WhatsApp screenshot side-by-side)*
 
