@@ -368,7 +368,7 @@ curl -i -X POST `
 
 ---
 
-## ⚖️ On-Premises API vs Cloud API
+##  On-Premises API vs Cloud API
 
 | Feature     | On-Premises API                   | Cloud API            |
 | ----------- | --------------------------------- | -------------------- |
