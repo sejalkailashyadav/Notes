@@ -1,6 +1,7 @@
 #  **WhatsApp Cloud API — Developer’s Roadmap (Complete Guide)**
 
 *A step-by-step practical guide to understanding and building with Meta’s WhatsApp Cloud API.*
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/7268f3b3-2aea-43e8-9690-1df94b50935e" />
 
 ---
 
@@ -2040,7 +2041,6 @@ Example:
    * `{{Recipient-Number}}`
 3. Hit **Send** and inspect the response.
 
-*(🖼️ Image idea: Screenshot of Postman showing 200 OK vs 400 Bad Request)*
 
 ### Using **cURL**
 
@@ -2083,7 +2083,7 @@ Grant permissions again:
 App Dashboard → App Review → Permissions and Features
 ```
 
-*(🖼️ Image idea: Meta Developer Dashboard showing granted permissions)*
+<img width="1835" height="655" alt="image" src="https://github.com/user-attachments/assets/abb39896-fc04-4e2a-9c4c-c71de13c560a" />
 
 ---
 
@@ -2133,7 +2133,7 @@ POST /v21.0/{Phone-Number-ID}/messages
 
 Use “Access Token” dropdown → select your permanent token.
 
-*(🖼️ Image idea: Graph API Explorer request screenshot)*
+<img width="2538" height="853" alt="image" src="https://github.com/user-attachments/assets/14a5134a-8ec7-4a40-8637-46469e56f5f9" />
 
 ---
 
@@ -2158,8 +2158,6 @@ logger.info("Message sent successfully!");
 
 You can send logs to Logtail or Sentry for alerts.
 
-*(🖼️ Image idea: Terminal showing formatted webhook logs)*
-
 ---
 
 ##  Step 8 — Common Developer Mistakes
@@ -2181,8 +2179,6 @@ You can send logs to Logtail or Sentry for alerts.
 * Don’t hit Graph API too frequently — respect rate limits
 * Log only critical info in production (to avoid leaks)
 * Use queues (BullMQ / RabbitMQ) for message bursts
-
-*(🖼️ Image idea: Diagram showing queue-based message sending flow)*
 
 ---
 
@@ -2274,9 +2270,6 @@ Before deployment, ensure your project is **production safe**.
      }
    });
    ```
-
-*(🖼️ Image idea: Screenshot of terminal showing server running on port 3000)*
-
 ---
 
 ##  Step 2 — Choose a Hosting Platform
@@ -2327,8 +2320,6 @@ Render automatically gives you a live HTTPS URL like:
 https://whatsapp-api.onrender.com
 ```
 
-*(🖼️ Image idea: Render dashboard showing environment variables)*
-
 ---
 
 ##  Step 4 — Connect the Webhook to Meta Dashboard
@@ -2345,7 +2336,7 @@ https://whatsapp-api.onrender.com
 
 If setup is correct, you’ll see “Webhook verified successfully ”.
 
-*(🖼️ Image idea: Meta dashboard showing verified webhook)*
+<img width="3676" height="1038" alt="image" src="https://github.com/user-attachments/assets/6709c7d3-8c3c-405d-9995-5d39542d4a93" />
 
 ---
 
@@ -2366,8 +2357,6 @@ curl -X POST https://graph.facebook.com/v21.0/$PHONE_NUMBER_ID/messages \
 ```
 
 If everything works, the recipient will get the message within seconds 
-
-*(🖼️ Image idea: Postman response and WhatsApp screenshot side-by-side)*
 
 ---
 
@@ -2408,8 +2397,6 @@ This launches multiple Node processes (multi-core optimization).
 
  Use a **load balancer (NGINX / Render autoscale)** if serving many webhook requests.
 
-*(🖼️ Image idea: PM2 dashboard with multiple instances)*
-
 ---
 
 ## 📈 Step 8 — Add Monitoring & Alerts
@@ -2434,8 +2421,6 @@ const logger = pino({ level: "info" });
 logger.info("Message delivered!");
 ```
 
-*(🖼️ Image idea: Logtail dashboard showing live logs)*
-
 ---
 
 ##  Step 9 — Add CI/CD Automation
@@ -2450,8 +2435,6 @@ To avoid manual redeploys every time you push code, enable **auto-deploy**:
 ### On Railway:
 
 * Connect GitHub → “Deploy on Push”.
-
-*(🖼️ Image idea: Auto-deploy toggle ON)*
 
 ---
 
@@ -2528,8 +2511,6 @@ This chapter is all about **scaling functionality** while keeping the developer 
 Example:  
 User requests order status → Flow automatically sends order details → Offers button to contact support
 
-*(🖼️ Image idea: Flow diagram showing user → step1 → step2 → button click → response)*
-
 ---
 
 ##  Step 2 — Creating a Simple Flow
@@ -2558,7 +2539,7 @@ Steps:
 3. Share via website, emails, or WhatsApp broadcast  
 4. Handle OAuth token on your server → store user ID for automation
 
-*(🖼️ Image idea: Embedded Signup flow from link → WhatsApp chat → auto onboarding)*
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/7549f890-ed61-441d-9e07-e32ee5600722" />
 
 ---
 
@@ -2630,8 +2611,6 @@ Meta frequently updates the Graph API and Cloud API features:
   * [StackOverflow](https://stackoverflow.com/questions/tagged/whatsapp-cloud-api)
   * [Reddit r/WhatsAppBusinessAPI](https://reddit.com/r/WhatsappBusinessAPI/)
 
-*(🖼️ Image idea: Versioning diagram showing API evolution and backward compatibility)*
-
 ---
 
 ##  Step 7 — Developer Tips & Best Practices
@@ -2643,7 +2622,8 @@ Meta frequently updates the Graph API and Cloud API features:
 * **Separate message queue & worker** → improves reliability under load
 * **Document your flows** → helps team handoff and future updates
 
----
+---<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/c81cc622-38b2-4ffd-a250-bc11feedfd70" />
+
 
 ##  Step 8 — Summary
 
