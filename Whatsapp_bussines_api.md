@@ -485,7 +485,8 @@ No third-party tools. No middlemen.
 4. Follow the prompts to accept the **Developer Terms**.
 5. Once completed, you’ll see your **Developer Dashboard**.
 
-![Meta Developer Dashboard](images/meta-dashboard.png)
+<img width="3358" height="1992" alt="image" src="https://github.com/user-attachments/assets/ffca9a52-6c80-4424-a0b0-67c41ab37719" />
+
 *Figure 1: Meta Developer Dashboard after signup*
 
 >  **Tip:** Use a Facebook account tied to your business email to avoid future access issues.
@@ -515,7 +516,8 @@ Developer mode allows you to create apps and generate access tokens. Usually, ne
 4. Click **Create App**.
 5. Complete the security check (CAPTCHA) if prompted.
 
-![Create Business App](images/create-business-app.png)
+<img width="800" height="401" alt="image" src="https://github.com/user-attachments/assets/0612779a-ff65-4085-85a3-9a3dbdc71392" />
+
 *Figure 2: Creating a new Business App in Meta Dashboard*
 
 >  **Pro Tip:** The app name can be anything — but for production apps, use your brand or project name for clarity.
