@@ -1,4 +1,4 @@
----
+
 # Table of Contents
 - [Prime Number form 1 to 100](#prime-number)
 - [Number Reverser](#number-reverser)
