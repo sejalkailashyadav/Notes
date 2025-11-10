@@ -1,5 +1,4 @@
 ```markdown
-
 # README
 ## Common Issues and Solutions
 ### Insufficient Permissions in VS Code\
