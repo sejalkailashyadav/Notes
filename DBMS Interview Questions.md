@@ -1,4 +1,3 @@
-
 # DBMS Interview Questions 
 Database Management Systems (DBMS) play a pivotal role in software applications that rely on structured storage of data. Understanding core concepts of DBMS is essential for software developers, database administrators, and data architects. 
 ## Questions & Answers
