@@ -1,3 +1,4 @@
+
 1. **What is MongoDB?**
    - **Answer:** MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. 
 
