@@ -11,8 +11,7 @@
 - [Factorial Calculator Using Recursions](#factorial-calculator-using-recursions)
 - [Fibonacci Series Generator](#fibonacci-series-generator)
 
----
-
+--
 ---
 
 # Number Reverser
