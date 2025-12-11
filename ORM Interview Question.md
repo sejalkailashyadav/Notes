@@ -1,6 +1,5 @@
 
 ---
-
 # ORM Interview Questions: Prisma & Sequelize
 
 ## Prisma
