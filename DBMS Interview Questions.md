@@ -1,6 +1,7 @@
 # DBMS Interview Questions 
 
 Database Management Systems (DBMS) play a pivotal role in software applications that rely on structured storage of data. Understanding core concepts of DBMS is essential for software developers, database administrators, and data architects. 
+
 ## Questions & Answers
 ### 1. **What is DBMS?**
    - **Answer**: A Database Management System (DBMS) is software that controls the storage, retrieval, and updating of data in a database.
