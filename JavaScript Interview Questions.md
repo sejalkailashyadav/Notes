@@ -1,4 +1,4 @@
-# JavaScript Interview Questions
+# JavaScript Interview Question
 ## Questions & Answers
 
 # Why Use JavaScript?
