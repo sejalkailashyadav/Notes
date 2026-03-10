@@ -1,5 +1,3 @@
-
----
 ## React Interview Questions
 
 ---
