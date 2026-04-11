@@ -1,9 +1,12 @@
 ## Common Issues and Solutions
-### Insufficient Permissions in VS Code\
+
+### Insufficient Permissions 
+
 If you are facing permission issues with your repository in VS Code, try changing the permissions of your repository using the following command:
 ```bash
 sudo chmod -R 777 Repo_name
 ```
+
 ### npm WARN Using --force Recommended Protections Disabled
 
 This kind of error can occur due to several reasons, such as improperly installed dependencies, a corrupted `node_modules` folder, or incorrect installation of dependencies (globally instead of locally, or vice versa). 
