@@ -1,19 +1,23 @@
 # Node.js Interview Question
 
 ## Questions & Answers
+
 ### 1. **What is Node.js?**
    - **Answer**: Node.js is a runtime environment built on Chrome's V8 JavaScript engine, enabling server-side execution of JavaScript.
    - **Example**: Traditional client-side scripting with JavaScript manipulates DOM elements, but with Node.js, you can create a web server using JavaScript.
 
 ### 2. **What is the event loop in Node.js?**
+
    - **Answer**: The event loop facilitates asynchronous operations, allowing Node.js to achieve non-blocking I/O operations, even with JavaScript being single-threaded.
    - **Example**: When reading a file, Node doesn't wait for the operation to complete. Instead, it continues executing other code and processes the file when ready.
 
 ### 3. **What is NPM?**
+
    - **Answer**: NPM (Node Package Manager) is Node.js's default package manager, used for installing and managing packages or modules for Node.js applications.
    - **Example**: Running `npm install express` installs the Express.js framework.
 
 ### 4. **Explain Callback in Node.js.**
+
    - **Answer**: A callback is a function passed to another, invoked after the latter's completion, aiding in asynchronous operations.
    - **Example**:
      ```javascript
@@ -45,10 +49,12 @@
        ```
 
 ### 6. **How can you prevent callback hell in Node.js?**
+
    - **Answer**: Callback hell, or "Pyramid of Doom", can be tamed through code modularization, using named functions, and implementing Promises or `async/await`.
    - **Example**: Opting for `async/await` over nested callbacks offers cleaner and more legible code.
 
 ### 7. **What is Express.js?**
+
    - **Answer**: Express.js is a minimal yet powerful Node.js web application framework, offering a suite of tools for web and mobile applications.
    - **Example**:
      ```javascript
@@ -59,6 +65,7 @@
      ```
 
 ### 8. **Handling errors in Node.js?**
+
    - **Answer**: Error management in Node.js can be achieved using callbacks, events, middleware (like in Express.js), and try-catch (primarily with async/await).
    - **Example** (in Express.js):
      ```javascript
