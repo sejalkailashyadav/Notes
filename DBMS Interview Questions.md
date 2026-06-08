@@ -514,21 +514,3 @@ Consider a simple database for a school system. Let's take a table `Classes`:
 | Charlie     | English       | Mrs. Doe    |
 | Alice       | English       | Mrs. Doe    |
 
-From the table, you can observe redundancy:
-
-1. The teacher's name for each subject is repeated for every student taking that subject. If there's a change in the teacher for a subject, you'd have to update multiple rows.
-  
-2. If you wanted to delete a student's record, you would also be deleting the teacher associated with them, which isn't ideal.
-
-3. If you wanted to add a new subject, you'd need a student to associate with it right away, which might not always be the case.
-
-### Solutions:
-
-1. **Normalization**: This is the process of organizing data to minimize redundancy. In the above example, normalization might involve creating separate tables for `Students`, `Subjects`, and `Teachers`, and then using foreign keys to establish relationships.
-
-2. **Regular Audits**: Periodically checking the database for redundancy can help in keeping it clean and efficient.
-
-
-
-
-
