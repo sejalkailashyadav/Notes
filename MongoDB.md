@@ -251,7 +251,7 @@
    - **Answer:** A covered query is one where all the fields returned in the result are covered by an index, reducing the amount of data that needs to be scanned.
 
    ```javascript
-   // Example: Covered query using an index on the "age" field
+
    db.users.find({ age: { $gte: 25 } }, { name: 1, age: 1, _id: 0 }).explain("executionStats");
    ```
 
@@ -259,7 +259,7 @@
    - **Answer:** The `findOneAndUpdate` method atomically updates and returns a single document based on a query.
 
    ```javascript
-   // Example: Update the age of a user and return the original document
+
    db.users.findOneAndUpdate({ name: "Bob" }, { $set: { age: 30 } }, { returnDocument: "before" });
    ```
 
@@ -267,7 +267,7 @@
    - **Answer:** A capped collection is a fixed-size collection with a maximum number of documents. Once the limit is reached, older documents are replaced with new ones.
 
    ```javascript
-   // Example: Create a capped collection with a size limit of 100KB
+
    db.createCollection("logs", { capped: true, size: 100000 });
    ```
 
@@ -275,7 +275,7 @@
     - **Answer:** MongoDB supports embedding documents, referencing documents, and using a hybrid approach. The choice depends on factors like data size, access patterns, and consistency requirements.
 
     ```javascript
-    // Example: Referencing documents (normalized model)
+
     const user = {
       _id: ObjectId(),
       name: "Alice",
