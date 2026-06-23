@@ -999,13 +999,6 @@ public static void pattern8() {
         }
         System.out.println();
     }
-
-    // Pattern 11:
-    // 1
-    // 0 1
-    // 1 0 1
-    // 0 1 0 1 
-    // 0 1 0 1 0
     public static void pattern11() {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= i; j++) {
